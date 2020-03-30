@@ -100,23 +100,23 @@ background-color: #e7d9ff;
   color:lightblue;
 }
 
-/* #demo1{
-  padding:1rem;
-  background-color: #e7d9ff;
-  font-size:2rem;
+h5{
+  padding:.5rem;width:20%;
+  background-color: #e7d9ff;text-align: center;
   color:#310680;
-} */
+}
 
 
 .saxxdemo{
  display: flex;
  justify-content: left;
  align-items: left;
+ margin-bottom: 2rem;
 }
 
 .saxxdemo saxx{
   font-size:2rem;
-  color: black;
+  color: black;font-weight: bold;
   letter-spacing:.5rem;
   transition:.2s all ease-in-out;
   animation-duration:1.1s;
@@ -130,6 +130,7 @@ background-color: #e7d9ff;
   transition:.2s all ease-in-out;
   animation-duration:1.1s;
 }
+
 .saxxdemo saxx1{
   font-size:2rem;
   color: black;
@@ -146,7 +147,8 @@ font-weight: bold;
 font-weight: bold;
 }
 
-.saxxdemo saxx2{
+
+saxxyy,saxxy,bop,saxx4,saxx5,saxx6,saxx3,saxx2{
   font-size:2rem;
   font-weight:bold;
   color: black;
@@ -187,4 +189,23 @@ html{
 .topsection li{
   margin-bottom: 1rem;
 }
+}
+
+
+@keyframes focus {
+0%{
+  transform: rotateX(10px);
+}
+
+50%{
+  filter:blur(10px);opacity: 1;
+}
+
+100%{
+  filter:blur(0px);opacity: 1;  backdrop-filter:blur(10px);
+}
+}
+
+.demop{
+animation: focus 1s ease-in forwards;
 }

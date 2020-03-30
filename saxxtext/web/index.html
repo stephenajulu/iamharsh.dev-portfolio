@@ -10,7 +10,7 @@
 
     <title>saxxtext.js</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="../lib/saxxtext.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.2/css/all.css">
     <script src="https://iamharsh.design/saxxtext/lib/saxxtext.js"></script>
   </head>
@@ -33,9 +33,9 @@
           </div>
             <p class="wow fadeInLeft">A tiny (~0.75kb) javascript library for <br>cool in & out text & hover animations.</p>
               <ul class="topsection">
-                <li><a href="https://github.com/theuitown/iamharsh.dev-portfolio/releases/download/1.0/saxxtext.js"> <button class='wow rubberBand btn main-btn' type='btn'><i class="fas fa-download"></i><span> </span>Download</button></a></li>
-                <li><a href="#demo"> <button class='btn main-btn wow rubberBand' type='btn'><i class="fas fa-smile-wink"></i><span> </span>Demo</button></a></li>
-                <li><a href="https://www.npmjs.com/package/saxxtext"> <button class='btn main-btn wow rubberBand' type='btn'><i class="fab fa-npm"></i><span> </span>npm/saxxtext</button></a></li>
+                <li><a href="https://github.com/theuitown/iamharsh.dev-portfolio/releases/download/1.0/saxxtext.js"> <button class='saxx rubberBand btn main-btn' type='btn'><i class="fas fa-download"></i><span> </span>Download</button></a></li>
+                <li><a href="#demo"> <button class='btn main-btn saxx rubberBand' type='btn'><i class="fas fa-smile-wink"></i><span> </span>Demo</button></a></li>
+                <li><a href=""> <button class='btn main-btn saxx rubberBand' type='btn'><i class="fab fa-npm"></i><span> </span>npm/saxxtext</button></a></li>
               </ul>
           </div>
           </div>
@@ -47,8 +47,8 @@
           <div class="row">
             <div class="col">
               <com>// Start baffle on any element(s).</com><br>
-              <cd><gr>setSaxxAnimation</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'animated heartBeat'<span> </span>)<span> </span>;</cd><br>
-              <cd><gr>setSaxxMouseEffect</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'animated heartBeat'<span> </span>,<span> </span>'black',<span> </span>,<span> </span>'blue'<span> </span>)<span> </span>;</cd>
+              <cd><gr>setSaxxAnimation</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'saxx heartBeat'<span> </span>)<span> </span>;</cd><br>
+              <cd><gr>setSaxxMouseEffect</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'saxx heartBeat'<span> </span>,<span> </span>'black'<span> </span>,<span> </span>'blue'<span> </span>)<span> </span>;</cd>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
                  <div class="container">
                    <div class="row">
                      <div class="col">
-                       <cd>npm install --save saxxtext</cd>
+                       <cd>npm install save saxxtext</cd>
                      </div>
                    </div>
                  </div>
@@ -94,7 +94,7 @@
                  <div class="container">
                    <div class="row">
                      <div class="col">
-                       <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"https://iamharsh.design/saxxtext/lib/saxxtext.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"https://iamharsh.design/saxxtext/lib/saxxtext.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script</span><span class="nt">&gt;</span>
                        </div>
                      </div>
                    </div>
@@ -105,7 +105,7 @@
       <div class="installtion-section">
       <div class="container">
         <div class="row">
-          <div class="col animated wobble">
+          <div class="col saxx wobble">
             <div class="saxxdemo">
               <saxx2>u</saxx2>
               <saxx2>s</saxx2>
@@ -124,8 +124,8 @@
                    <div class="row">
                      <div class="col">
                        <com style="margin-bottom:1rem;">// add to html file</com><br><br>
-                       <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"</span><span class="nt">&gt;</span>
-                      <br>  <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"https://iamharsh.design/saxxtext/lib/saxxtext.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script</span><span class="nt">&gt;</span>
+                       <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://iamharsh.design/saxxtext/lib/saxxtext.min.css"</span><span class="nt">&gt;</span>
+                      <br>  <span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"https://iamharsh.design/saxxtext/lib/saxxtext.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script</span><span class="nt">&gt;</span>
                        <br><br>
                        <com>//html example</com><br><br>
                        <cd><gr>
@@ -137,44 +137,58 @@
                           <span class="nt">&lt;h1</span><span class="nt">&gt;</span>H<span class="nt">&lt;/h1</span><span class="nt">&gt;</span><br>
                           <span class="nt">&lt;/div</span><span class="nt">&gt;</span><br>
                        </gr></cd><br>
-                       <com>// add to style.css .
-         </com><br>
-              <cd><gr>.elementbody</gr><span> </span>{<span> </span><ye>display</ye><span> </span>:<span> </span>flex;<span> </span>}</cd><br><br>
+                       <com>// add to style.css .</com><br>
+                        <cd><gr>.elementbody</gr><span> </span>{<span> </span><ye>display</ye><span> </span>:<span> </span>flex;<span> </span>}</cd><br><br>
 
-                       <com>// add to javascript file.
-</com><br>
-              <cd><gr>setSaxxAnimation</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'animated heartBeat'<span> </span>)<span> </span>;</cd><br>
-              <cd><gr>setSaxxMouseEffect</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'animated heartBeat'<span> </span>,<span> </span>'black',<span> </span>,<span> </span>'blue'<span> </span>)<span> </span>;</cd>
-              <br>
-
+                       <com>// add to javascript file.</com><br>
+                      <cd><gr>setSaxxAnimation</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'saxx heartBeat'<span> </span>)<span> </span>;</cd><br>
+                      <cd><gr>setSaxxMouseEffect</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'saxx heartBeat'<span> </span>,<span> </span>'black'<span> </span>,<span> </span>'blue'<span> </span>)<span> </span>;</cd>
+                      <br>
                      </div>
                    </div>
                  </div>
                  </div>
-</div>
+              </div>
 
                   <div class="installtion-section">
                   <div class="container">
                     <div class="row">
                       <div class="col">
-                        <h3>Animation Options</h3>
-                        <p>This js library uses animate.css for animations so we <br>support all the animations provided by <a href="https://daneden.github.io/animate.css/">animate.css</a>. <br>So you can visit their website and see what animation suits you and can use it.</p>
+                        <div class="saxxdemo">
+                          <saxx3>a</saxx3>
+                          <saxx3>n</saxx3>
+                          <saxx3>i</saxx3>
+                          <saxx3>m</saxx3>
+                          <saxx3>a</saxx3>
+                          <saxx3>t</saxx3>
+                          <saxx3>i</saxx3>
+                          <saxx3>o</saxx3>
+                          <saxx3>n</saxx3>
+                          <saxx3 style="margin-left:1rem;">o</saxx3>
+                          <saxx3>p</saxx3>
+                          <saxx3>t</saxx3>
+                          <saxx3>i</saxx3>
+                          <saxx3>o</saxx3>
+                          <saxx3>n</saxx3>
+                          <saxx3>s</saxx3>
+                          <saxx3> </saxx3>
+                          <saxx3>.</saxx3>
+                        </div>
+                        <p>This js library uses its own animation library as of now we supports only 10 text animations.<br>So you have to choose from <a href="#demo">demo section</a> below what animation you would like to use.</p>
                             </div>
-                    </div>
-                  </div>
+                              </div>
+                            </div>
                                  <div class="code-part" id="npm">
                                    <div class="container">
                                      <div class="row">
                                        <div class="col">
                                          <com>// Start baffle on any element(s).
                   </com><br>
-                                <cd><gr>setSaxxAnimation</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'animated <saxxspan>heartBeat</saxxspan>'<span> </span>)<span> </span>;</cd><br>
-
-                                <cd><gr>setSaxxMouseEffect</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'animated heartBeat'<span> </span>,<span> </span>'black',<span> </span>,<span> </span>'blue'<span> </span>)<span> </span>;</cd>
-             <br>
+                  <cd><gr>setSaxxAnimation</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'saxx heartBeat'<span> </span>)<span> </span>;</cd><br>
+                  <cd><gr>setSaxxMouseEffect</gr><span> </span>(<span> </span><ye>'h1'</ye><span> </span>,<span> </span>'saxx heartBeat'<span> </span>,<span> </span>'black'<span> </span>,<span> </span>'blue'<span> </span>)<span> </span>;</cd>
                                          <br>
-                                         <com style="color:black;padding:.5rem;background:white;">// replace text with blue color with animation you wanna use.
-                  </com>
+                                         <br>
+                  <com style="color:black;padding:.5rem;background:white;">// replace text with blue color with animation you wanna use.  </com>
 
                                        </div>
                                      </div>
@@ -192,71 +206,170 @@
                           <saxx2>m</saxx2>
                           <saxx2>o</saxx2>
                         </div>
-                        <p>Just hover on the text below and see magic</p>
+                        <p class="demop">Just hover on the text below and see magic</p>
+                        <h5>#1.flipY</h5>
+                        <div class="saxxdemo">
+                          <saxx4>f</saxx4>
+                          <saxx4>l</saxx4>
+                          <saxx4>i</saxx4>
+                          <saxx4>p</saxx4>
+                          <saxx4>Y</saxx4>
+                        </div>
+                        <h5>#2.zoomInUp</h5>
+                        <div class="saxxdemo">
+                          <saxx5>z</saxx5>
+                          <saxx5>o</saxx5>
+                          <saxx5>o</saxx5>
+                          <saxx5>m</saxx5>
+                          <saxx5>I</saxx5>
+                          <saxx5>n</saxx5>
+                          <saxx5>U</saxx5>
+                          <saxx5>p</saxx5>
+                        </div>
+
+                        <h5>#3.dribbbleUp</h5>
+                        <div class="saxxdemo">
+                          <saxx6>b</saxx6>
+                          <saxx6>o</saxx6>
+                          <saxx6>u</saxx6>
+                          <saxx6>n</saxx6>
+                          <saxx6>c</saxx6>
+                          <saxx6>y</saxx6>
+                          <saxx6>U</saxx6>
+                          <saxx6>p</saxx6>
+                        </div>
+
+                        <h5>#4.dribbbleDown</h5>
+                        <div class="saxxdemo">
+                          <saxxy>b</saxxy>
+                          <saxxy>o</saxxy>
+                          <saxxy>u</saxxy>
+                          <saxxy>n</saxxy>
+                          <saxxy>c</saxxy>
+                          <saxxy>y</saxxy>
+                          <saxxy>D</saxxy>
+                          <saxxy>o</saxxy>
+                          <saxxy>w</saxxy>
+                          <saxxy>n</saxxy>
+                        </div>
+
+
+                        <h5>#5.shrinkyDown</h5>
+                        <div class="saxxdemo">
+                          <saxxyy>s</saxxyy>
+                          <saxxyy>h</saxxyy>
+                          <saxxyy>r</saxxyy>
+                          <saxxyy>i</saxxyy>
+                          <saxxyy>n</saxxyy>
+                          <saxxyy>k</saxxyy>
+                          <saxxyy>y</saxxyy>
+                          <saxxyy>D</saxxyy>
+                          <saxxyy>o</saxxyy>
+                          <saxxyy>w</saxxyy>
+                          <saxxyy>n</saxxyy>
+                        </div>
+
+                        <h5>#6.bop</h5>
+                        <div class="saxxdemo">
+                          <bop>b</bop>
+                          <bop>o</bop>
+                          <bop>p</bop>
+                        </div>
+
+                        <h5>#7.heartBeat</h5>
                         <div class="saxxdemo">
                         <saxx>i</saxx>
-                  <saxx>a</saxx>
-                  <saxx>m</saxx>
-                  <saxx>h</saxx>
-                  <saxx>a</saxx>
-                    <saxx>r</saxx>
-                    <saxx>s</saxx>
-                    <saxx>h</saxx>
-                    <saxx>.</saxx>
-                    <saxx>d</saxx>
-                    <saxx>e</saxx>
-                    <saxx>v</saxx>
-                  </div>
-                  <div class="saxxdemo">
-                  <saxx1>e</saxx1>
-                  <saxx1>l</saxx1>
-                  <saxx1>e</saxx1>
-                  <saxx1>c</saxx1>
-                  <saxx1>t</saxx1>
-                  <saxx1>r</saxx1>
-                  <saxx1>o</saxx1>
-                  <saxx1>n</saxx1>
-                </div>
+                          <saxx>a</saxx>
+                          <saxx>m</saxx>
+                          <saxx>h</saxx>
+                          <saxx>a</saxx>
+                            <saxx>r</saxx>
+                            <saxx>s</saxx>
+                            <saxx>h</saxx>
+                            <saxx>.</saxx>
+                            <saxx>d</saxx>
+                            <saxx>e</saxx>
+                            <saxx>v</saxx>
+                        </div>
+                        
+                        <h5>#8.rubberBand</h5>
+                          <div class="saxxdemo">
+                          <saxx1>e</saxx1>
+                          <saxx1>l</saxx1>
+                          <saxx1>e</saxx1>
+                          <saxx1>c</saxx1>
+                          <saxx1>t</saxx1>
+                          <saxx1>r</saxx1>
+                          <saxx1>o</saxx1>
+                          <saxx1>n</saxx1>
+                        </div>
 
-                <div class="saxxdemo">
-                  <saxx2>u</saxx2>
-                  <saxx2> </saxx2>
-                  <saxx2>p</saxx2>
-                  <saxx2> </saxx2>
-                  <saxx2>e</saxx2>
-                  <saxx2> </saxx2>
-                  <saxx2>r</saxx2>
-                  <saxx2> </saxx2>
-                  <saxx2>o</saxx2>
-                </div>
+                        <h5>#9.wobble</h5>
+                        <div class="saxxdemo">
+                          <saxx2>u</saxx2>
+                          <saxx2> </saxx2>
+                          <saxx2>p</saxx2>
+                          <saxx2> </saxx2>
+                          <saxx2>e</saxx2>
+                          <saxx2> </saxx2>
+                          <saxx2>r</saxx2>
+                          <saxx2> </saxx2>
+                          <saxx2>o</saxx2>
+                        </div>
+
+                        <h5>#10.jello</h5>
+                        <div class="saxxdemo">
+                          <saxx3>j</saxx3>
+                          <saxx3>e</saxx3>
+                          <saxx3>l</saxx3>
+                          <saxx3>l</saxx3>
+                          <saxx3>o</saxx3>
+                        </div>
+
                       </div>
                     </div>
                   </div>
-
                   </div>
 
-        <div class="container" style="margin-top:3rem;margin-bottom:3rem;">
-          <div class="row">
-            <div class="col">
-              <section id="support">
-              <div class="wrap">
-              <h3 class="sectionHeader">Browser Support</h3>
-              <ul>
-                <li><i class="fas fa-check"></i> All Modern Browsers</li>
-                <br>
-                <li><i class="fas fa-check"></i> IE9+</li>
-              </ul>
-              <p>Please <a href="https://github.com/theuitown/iamharsh.dev-portfolio/issues">report any issues</a> you come across.</p>
-              </div>
-              </section>
+                <div class="container" style="margin-top:3rem;margin-bottom:3rem;">
+                  <div class="row">
+                    <div class="col">
+                      <section id="support">
+                      <div class="wrap">
+                      <div class="saxxdemo">
+                        <saxx3>b</saxx3>
+                        <saxx3>r</saxx3>
+                        <saxx3>o</saxx3>
+                        <saxx3>w</saxx3>
+                        <saxx3>s</saxx3>
+                        <saxx3>e</saxx3>
+                        <saxx3>r</saxx3>
+                        <saxx3 style="margin-left:1rem;">s</saxx3>
+                        <saxx3>u</saxx3>
+                        <saxx3>p</saxx3>
+                        <saxx3>p</saxx3>
+                        <saxx3>o</saxx3>
+                        <saxx3>r</saxx3>
+                        <saxx3>t</saxx3>
+                        <saxx3> </saxx3>
+                        <saxx3>.</saxx3>
+                      </div>
+                      <ul>
+                        <li><i class="fas fa-check"></i> All Modern Browsers</li>
+                        <br>
+                        <li><i class="fas fa-check"></i> IE9+</li>
+                      </ul>
+                      <p>Please <a href="https://github.com/theuitown/iamharsh.dev-portfolio/issues">report any issues</a> you come across.</p>
+                      </div>
+                      </section>
 
-              <section class="wrap">
-              <div><strong>License</strong> MIT</div>
-              <div><strong>Made By</strong> <a href="http://iamharsh.design">Harsh Vardhan</a></div>
-              </section>
-            </div>
-          </div>
-        </div>
+                      <section class="wrap">
+                      <div><strong>License</strong> MIT</div>
+                      <div><strong>Made By</strong> <a href="http://iamharsh.design">Harsh Vardhan</a></div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
 
 
     <!-- Optional JavaScript -->
@@ -265,14 +378,36 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
-      setAnimationSaxx('saxx','animated heartBeat');
-      setSaxxMouseEffect('saxx','animated heartBeat','black','blue');
+      setAnimationSaxx('saxx','saxx heartBeat');
+      setSaxxMouseEffect('saxx','saxx heartBeat','black','blue');
 
-      setAnimationSaxx('saxx1','animated rubberBand');
-      setSaxxMouseEffect('saxx1','animated rubberBand','black','blue');
+      setAnimationSaxx('saxx1','saxx rubberBand');
+      setSaxxMouseEffect('saxx1','saxx rubberBand','black','blue');
 
-      setAnimationSaxx('saxx2','animated wobble');
-      setSaxxMouseEffect('saxx2','animated wobble','black','blue');
+      setAnimationSaxx('saxx2','saxx wobble');
+      setSaxxMouseEffect('saxx2','saxx wobble','black','blue');
+
+      setAnimationSaxx('saxx3','saxx jello');
+      setSaxxMouseEffect('saxx3','saxx jello','black','blue');
+
+      setAnimationSaxx('saxx4','saxx flipY');
+      setSaxxMouseEffect('saxx4','saxx flipY','black','blue');
+
+      setAnimationSaxx('saxx5','saxx zoomInUp');
+      setSaxxMouseEffect('saxx5','saxx zoomInUp','black','blue');
+
+      setAnimationSaxx('saxx6','saxx dribbbleUp');
+      setSaxxMouseEffect('saxx6','saxx dribbbleUp','black','blue');
+
+            setAnimationSaxx('saxxy','saxx dribbbleDown');
+            setSaxxMouseEffect('saxxy','saxx dribbbleDown','black','blue');
+
+            setAnimationSaxx('saxxyy','saxx shrinkyDown');
+            setSaxxMouseEffect('saxxyy','saxx shrinkyDown','black','blue');
+
+
+    setAnimationSaxx('bop','saxx bop');
+    setSaxxMouseEffect('bop','saxx bop','black','blue');
 
       $('#npmbtn').on('click',function(){
         $('#npm').css('display','block');
@@ -284,12 +419,6 @@
         $('#vanillacode').css('display','block');
       });
     </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-
-</script>
-    <script>new WOW().init();</script>
 
   </body>
 </html>
